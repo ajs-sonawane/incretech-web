@@ -1,0 +1,196 @@
+.section-services,
+.section-items {
+  padding: 6.6em 1.8em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 13rem 13rem 13rem 13rem 13rem 13rem 13rem;
+  overflow: hidden;
+}
+
+.heading-secondary {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+.services {
+  transition: all 1s ease-in-out;
+  position: relative;
+  filter: grayscale(100%);
+  transition: all 0.6s ease-in-out;
+}
+
+.services:hover {
+  filter: grayscale(0%);
+  transition: all 0.8s ease-in-out;
+  background-size: 120%;
+}
+
+.image-container-services-1 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.pexels.com/photos/207574/pexels-photo-207574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.8s ease-in;
+}
+.image-container-services-2 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.pexels.com/photos/21905/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.8s ease-in;
+}
+.image-container-services-3 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.unsplash.com/photo-1645725677294-ed0843b97d5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.8s ease-in;
+}
+.image-container-services-4 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.unsplash.com/photo-1585079374502-415f8516dcc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=8");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.8s ease-in;
+}
+.image-container-services-5 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.pexels.com/photos/2881229/pexels-photo-2881229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.8s ease-in;
+}
+.image-container-services-6 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.pexels.com/photos/207574/pexels-photo-207574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.8s ease-in;
+}
+.image-container-services-7 {
+  margin-bottom: 0.8em;
+  background-image: url("https://images.pexels.com/photos/430208/pexels-photo-430208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition: background-size 0.2s ease-in;
+}
+
+.sub-text {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 0.8em 0.8em;
+}
+
+.link {
+  text-decoration: none;
+  color: #01587e;
+}
+
+.info {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+}
+.content {
+  margin-bottom: 1.8em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.secondary {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 0.4em;
+}
+
+.info-image {
+  width: 100%;
+}
+
+/* .transition-in {
+  animation: transition-in 1s ease-in-out 200ms backwards;
+} */
+body,
+.App {
+  animation: transition-in 1s ease-in-out 200ms backwards;
+}
+
+@keyframes transition-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 660px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 13rem 13rem 13rem 13rem;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .padding-y {
+    padding: 4em;
+  }
+
+  .info {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+  .content {
+    margin-bottom: 0;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-services,
+  .section-items {
+    padding: 7em 10em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15rem 15rem 15rem;
+  }
+}

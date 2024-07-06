@@ -1,0 +1,316 @@
+.section-container {
+  padding: 7em 1.8em;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* gap: 30px; */
+  /* width: 90%; */
+}
+
+.content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+  letter-spacing: 1.4px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  color: rgb(107, 107, 107);
+}
+
+.primary-heading {
+  font-size: 2.3rem;
+  font-weight: 900;
+  font-family: "Rubik", sans-serif;
+}
+
+.line::before {
+  background: #25a5be;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 70px;
+  border-radius: 9px;
+  margin-bottom: 0.4em;
+}
+
+.content-info .text {
+  margin-bottom: 1.2em;
+  color: rgb(74, 74, 74);
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #25a5be;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.9em 0;
+  border-radius: 100px;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn:hover {
+  box-shadow: 0 3px 3px rgba(49, 49, 49, 0.2);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  grid-template-rows: repeat(2, 35vh);
+  gap: 3px;
+}
+
+.image-container-tech-1 {
+  background-image: url("../assets/cctv.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container-tech-2 {
+  background-image: url("../assets/tech.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container-tech-3 {
+  background-image: url("../assets/iot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container-tech-4 {
+  background-image: url("../assets/franchise1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay::before {
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67, 67, 67, 0.347);
+}
+
+.link .overlay-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+  position: absolute;
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(65%);
+  padding: 0.5em;
+  word-break: break-word;
+}
+
+.link h5 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1em;
+  font-weight: 900;
+}
+
+.link .overlay-text {
+  font-size: 0.8rem;
+  /* opacity: 0; */
+  display: none;
+}
+
+.image-overlay:hover::before {
+  background-color: rgba(19, 19, 19, 0.669);
+}
+
+.link:hover .overlay-content {
+  color: rgb(245, 245, 245);
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.link:hover .overlay-text {
+  /* opacity: 1; */
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .link .overlay-content {
+    transform: translateY(80%);
+  }
+}
+
+@media (min-width: 700px) {
+  .section-container {
+    padding: 8em 3.8em;
+    overflow-y: hidden;
+  }
+}
+
+@media (min-width: 800px) {
+  .section-container {
+    padding: 7.5em 10em;
+    padding-bottom: 9em;
+  }
+
+  .primary-heading {
+    font-size: 2.6rem;
+    font-weight: 900;
+  }
+
+  .content-info {
+    margin-bottom: 0;
+  }
+
+  .content-info .text {
+    margin-bottom: 1.2em;
+    color: rgb(74, 74, 74);
+    font-size: 0.7rem;
+    text-align: justify;
+    line-height: 1.4;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 13vw);
+    grid-template-rows: 17rem 3rem;
+  }
+
+  .image-container-tech-4 {
+    grid-column: 1/-1;
+  }
+
+  .container {
+    flex-direction: row;
+    /* padding-top: 2em; */
+    /* width: 100%; */
+  }
+
+  .link h5 {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+  .link .overlay-content {
+    transform: translateY(78%);
+  }
+
+  .link .last {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(30%);
+    padding: 0.5em;
+    word-break: break-word;
+    align-items: center;
+  }
+
+  .line::before {
+    background: #25a5be;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 80px;
+    border-radius: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-container {
+    padding: 9em 10em;
+    padding-bottom: 4.5em;
+  }
+
+  .sub-heading {
+    font-size: 1.4rem;
+  }
+
+  .primary-heading {
+    font-size: 3.6rem;
+    font-weight: 900;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 14.5vw);
+    grid-template-rows: 20rem 4rem;
+  }
+
+  .link .overlay-content {
+    transform: translateY(85%);
+  }
+
+  .link .last {
+    transform: translateY(30%);
+    align-items: center;
+  }
+
+  .content-info .text {
+    /* margin-bottom: 1.2em;
+    color: rgb(74, 74, 74); */
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    /* text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    */
+  }
+
+  .line::before {
+    margin-bottom: 1.6em;
+    width: 100px;
+  }
+}
